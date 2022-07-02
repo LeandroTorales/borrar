@@ -1,6 +1,9 @@
 * {
   padding: 0;
   margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+    text-decoration: none;
 }
 html {
   height: 100%;
@@ -33,12 +36,10 @@ nav {
 }
 .ul-links-a-nav {
   display: flex;
-  list-style: none;
 }
 ul li a {
   margin: 0px 15px;
   color: white;
-  text-decoration: none;
 }
 
 .darkSouls3-div-img-article {
