@@ -15,15 +15,44 @@ body {
   font-style: italic;
 }
 
-/* NAVBAR */ /* */
+/*Logo Dark Souls y barra de busqueda*/
+.container-div-logo-search {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(58, 58, 58);
+}
+/*Logo SVG Header*/
+
+.dark_souls_image_SVG_header {
+  height: 60px;
+}
+/*Barra busqueda*/
+.barSearch {
+  display: flex;
+  align-items: center;
+}
+.label-search-input {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 25px;
+  color: white;
+}
+#searchInput {
+  border-radius: 6px;
+  border-color: black;
+  height: 35px;
+  font-size: 15px;
+}
+
+/* NAVBAR */
 nav {
   background-color: rgb(58, 58, 58);
   display: flex;
   justify-content: center;
 }
-
 /*SVG navbar y boton hamburgesa media query*/
-.container-navbar {
+.container-navbar-mediaQuery {
   float: right;
   display: flex;
   align-items: center;
@@ -36,20 +65,6 @@ nav {
 }
 #checkbutton-input {
   display: none;
-}
-
-/*Titulo Header*/
-.h1TitleDiv {
-  background-color: rgb(58, 58, 58);
-  display: flex;
-  justify-content: center;
-}
-.h1TitleDiv h1 {
-  font: italic bold 35px;
-  font-weight: 700;
-  text-shadow: 0 0 20px #fefcc9, 2px -2px 3px #feec85, -4px -4px 5px #ffae34, 5px -10px 6px #ec760c, -5px -12px 8px #cd4606, 0 -15px 20px #973716,
-    2px -15px 20px #451b0e;
-  color: rgb(0, 0, 0);
 }
 
 /*Links de la Navbar*/
@@ -83,5 +98,53 @@ ul li a {
 }
 
 /*Media querys tablet*/
-@media (max-width: 952) {
+@media (max-width: 952px) {
+  .logoSVG-darkSouls-div {
+    padding-left: 15px;
+  }
+  .dark_souls_image_SVG_header {
+    height: 45px;
+  }
+  .barSearch {
+    padding-right: 15px;
+  }
+  ul li a {
+    margin: 0px 14px;
+    color: white;
+    font-size: 19px;
+  }
+  #searchInput {
+    height: 30px;
+    font-size: 13px;
+  }
+  .label-search-input {
+    font-size: 20px;
+  }
+}
+/*Media querys celular*/
+@media (max-width: 768px) {
+  .label-svg-gamepad {
+    display: block;
+  }
+  .ul-links-a-nav {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: -100%;
+    background: red;
+    top: 51px;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    margin: 30px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 25px;
+  }
+  #checkbutton-input:checked ~ .ul-links-a-nav {
+    left: 0%;
+  }
 }
