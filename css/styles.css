@@ -145,14 +145,17 @@ ul li a {
     font-size: 16px;
   }
   .ul-links-a-nav {
-    display: block;
     position: fixed;
-    width: 100%;
-    height: 100vh;
-    left: -100%;
+    top: 41px;
+    bottom: 0;
     background: red;
-    top: 51px;
-    text-align: center;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: 
     transition: all 0.5s;
   }
   nav ul li {
@@ -162,7 +165,7 @@ ul li a {
   nav ul li a {
     font-size: 25px;
   }
-  #checkbutton-input:checked ~ .ul-links-a-nav {
-    left: 0%;
+  #checkbutton-input:checked + .ul-links-a-nav {
+    left: -100%;
   }
 }
