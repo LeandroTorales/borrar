@@ -123,8 +123,26 @@ ul li a {
 }
 /*Media querys celular*/
 @media (max-width: 768px) {
+  .logoSVG-darkSouls-div {
+    padding-right: 5px;
+  }
+  .dark_souls_image_SVG_header {
+    height: 35px;
+  }
+  .barSearch {
+    padding-right: 5px;
+  }
+  #searchInput {
+    height: 20px;
+    font-size: 9px;
+  }
+  .label-search-input {
+    font-size: 15px;
+  }
+
   .label-svg-gamepad {
     display: block;
+    font-size: 16px;
   }
   .ul-links-a-nav {
     display: block;
